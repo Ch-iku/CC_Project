@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suyash Giri - Profile</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+        }
+        .profile-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            animation: fadeIn 1s ease-in-out;
+            transition: all 0.3s ease;
+        }
+        .profile-card:hover {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+            background: rgba(255, 255, 255, 0.15);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+        .profile-img:hover {
+            transform: rotate(5deg) scale(1.1);
+            box-shadow: 0 8px 16px rgba(255, 255, 255, 0.3);
+            border-color: #ffd700;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+        h1:hover {
+            color: #ffd700;
+            text-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+            transform: scale(1.05);
+        }
+        p {
+            font-size: 1.2em;
+            margin: 0;
+            opacity: 0.9;
+            transition: all 0.3s ease;
+        }
+        p:hover {
+            opacity: 1;
+            transform: translateY(-5px);
+            color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <img src="https://media.licdn.com/dms/image/v2/D5603AQEkLgLjHeq0Jw/profile-displayphoto-crop_800_800/B56ZuNbqZ0HgAI-/0/1767604399516?e=1775088000&v=beta&t=xwXS0Z6mAmId614_hQGJas-TIUopagl0ltbRgBKg5Gk" alt="Profile Image" class="profile-img">
+        <h1>Suyash Giri</h1>
+        <p>Roll No: 2306072</p>
+    </div>
+</body>
+</html>
